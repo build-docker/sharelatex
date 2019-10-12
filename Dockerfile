@@ -1,3 +1,3 @@
-FROM sharelatex/sharelatex:2.0-beta-2
+FROM sharelatex/sharelatex:2.0.0
 
-RUN tlmgr install scheme-full
+RUN tlmgr update --all && tlmgr install scheme-full
